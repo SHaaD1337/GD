@@ -1,0 +1,48 @@
+//
+// LocalFS.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+#include "..\Common\config.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION HB_VERSION_MAJOR_HIGH,HB_VERSION_MAJOR_LOW,HB_VERSION_MINOR_HIGH,HB_VERSION_MINOR_LOW
+ PRODUCTVERSION HB_VERSION_MAJOR_HIGH,HB_VERSION_MAJOR_LOW,HB_VERSION_MINOR_HIGH,HB_VERSION_MINOR_LOW
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", HB_COMPANY_NAME
+            VALUE "FileVersion", HB_VERSION_FULL
+            VALUE "InternalName", "Google Drive plug-in"
+            VALUE "LegalCopyright", HB_COPYRIGHT
+            VALUE "OriginalFilename", "GoogleDrive.dll"
+            VALUE "ProductVersion", HB_VERSION_FULL
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+
